@@ -1,5 +1,6 @@
-html {
+html, body {
     font-family: sans-serif;
+    overflow-x: hidden;
 }
 
 header{
@@ -20,7 +21,7 @@ header{
 
 .Conteineris1{
     display: grid;
-    grid-template-columns: 500px 1fr; 
+    grid-template-columns: 300px 1fr; 
 }
 
 
@@ -29,11 +30,12 @@ header{
 }
 
 .MainSingUpContainer5{
-    min-width: 300px;
+    min-width: 400px;
     background-image: url("assets/graphic.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
+    margin-left: -200px;
 }
 
 .TextAtention{
@@ -52,8 +54,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 350px;
-    height: 100px;
+    width: 250px;
+    height: 80px;
     border-radius: 3rem;
     background-image: url("assets/background.svg");
     background-size: cover;
@@ -64,8 +66,8 @@ header{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 330px;
-    height: 80px;
+    width: 240px;
+    height: 70px;
     border-radius: 3rem;
     background: #fff;
     text-decoration: none;
@@ -161,8 +163,14 @@ header{
     font-size: 1rem;
 }
 
-.BigBalery{
-    display: none;
+.PhotoGalery{
+    display: inline-flex;
+    margin-right: 1rem;
+}
+
+.Galery{
+    display: inline;
+    margin-right: 1rem;
 }
 
 .bottomSingUp{
@@ -208,13 +216,17 @@ footer{
 .MainSingUpContainer6{
     background-image: url("assets/upsell-footer-image.svg");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: inherit;
     background-position: left;
 }
 
-@media only screen and (min-width: 786px) {
+@media only screen and (min-width: 768px) {
     .SmallMenu{
          display: none;
+    }
+
+    .MainSingUpContainer{
+        min-width: 400px;
     }
 
     header, .BigMenu{
@@ -239,16 +251,6 @@ footer{
         background-size: cover;
         border-radius: 3rem;
         margin: 3rem;
-    }
-
-    .PhotoGalery{
-        display: inline-flex;
-        margin-right: 1rem;
-    }
-
-    .BigBalery, .smallgalery{
-        display: inline;
-        margin-right: 1rem;
     }
 
     .FooterContainer{
@@ -281,6 +283,12 @@ footer{
         background-size: inherit;
         background-position: bottom center;
     }
+
+    .MainSingUpContainer5{
+        min-width: 400px;
+        background-position: left;
+        margin-left: 0;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -291,6 +299,10 @@ footer{
         background-repeat: no-repeat;
         background-size: inherit;
         background-position: center;
+    }
+
+    .MainSingUpContainer{
+        min-width: 520px;
     }
 }
 
