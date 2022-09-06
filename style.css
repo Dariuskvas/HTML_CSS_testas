@@ -71,10 +71,7 @@ header{
     text-decoration: none;
     font-size: 2rem;
     color: #000;
-    
 }
-
-
 
 .Text1MainNextcontainer{
     color: #000;
@@ -100,8 +97,7 @@ header{
 
 .PartnerLogo{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    
+    grid-template-columns: 1fr 1fr; 
 }
 
 .PartnerLogo > a{
