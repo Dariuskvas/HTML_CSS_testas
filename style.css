@@ -24,7 +24,6 @@ header{
     grid-template-columns: 300px 1fr; 
 }
 
-
 .MainSingUpContainer{
      padding: 6rem 0 3rem 3rem;
 }
@@ -125,10 +124,6 @@ header{
     font-size: 1.5rem;
 }
 
-.PhotoGalery{
-    margin: 3rem;
-}
-
 .photo1{
     width: 400px;
     background-clip: border-box;
@@ -170,6 +165,7 @@ header{
 .PhotoGalery{
     display: inline-flex;
     margin-right: 1rem;
+    margin: 3rem;
 }
 
 .Galery{
@@ -301,7 +297,6 @@ footer{
 }
 
 @media only screen and (min-width: 1200px) {
-
     .MainSingUpContainer5{
         min-width: 300px;
         background-image: url("assets/graphic.svg");
